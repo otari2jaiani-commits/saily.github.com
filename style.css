@@ -15,3 +15,46 @@ a {
     text-decoration: none;
     font-weight: bold;
 }
+/* Reset default margins/padding */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Sidebar styling */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px; /* width of sidebar */
+    height: 100vh; /* full height */
+    background-color: #0077cc;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+/* Sidebar header */
+.sidebar h1 {
+    margin-bottom: 40px;
+    font-size: 24px;
+}
+
+/* Sidebar links */
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 18px;
+}
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+/* Main content styling */
+.main-content {
+    margin-left: 200px; /* same as sidebar width */
+    padding: 20px;
+}

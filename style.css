@@ -6,28 +6,30 @@ body {
 
 /* Sidebar */
 .sidebar {
-    position: fixed;
-    left: 0;
+    position: fixed;        /* stays on left when scrolling */
     top: 0;
-    width: 20%; /* 1/5 of screen */
-    height: 100vh; /* full height */
-    background-color: #0077cc;
+    left: 0;
+    width: 20%;             /* 1/5 of screen */
+    height: 100vh;          /* full height */
+    background-color: #f0f0f0;
+    border-right: 2px solid #0077cc;  /* visible line to separate sidebar */
     display: flex;
-    justify-content: center; /* horizontal centering */
+    justify-content: center; /* horizontal centering of MENU text */
     align-items: center;     /* vertical centering */
 }
 
+/* Sidebar text */
 .menu-text {
-    color: white;
-    font-size: 24px;
     writing-mode: vertical-rl; /* vertical text */
-    transform: rotate(180deg); /* upright direction */
+    transform: rotate(180deg); /* upright orientation */
+    font-size: 24px;
+    color: #0077cc;
     letter-spacing: 2px;
 }
 
 /* Main content */
 .main-content {
-    margin-left: 20%; /* same as sidebar width */
+    margin-left: 20%;       /* same width as sidebar */
     padding: 50px;
     text-align: center;
 }
